@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Vidly.Models;
 
 namespace Vidly.Controllers
 {
@@ -12,7 +13,7 @@ namespace Vidly.Controllers
         public ActionResult Random()
         {
             var movie = new Movie() { Name = "Shrek!" };
-            retrun view (movie);
+            return View(movie);
         }
     }
 }
